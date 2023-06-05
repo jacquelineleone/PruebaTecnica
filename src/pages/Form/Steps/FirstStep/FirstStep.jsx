@@ -16,26 +16,50 @@ export default function FirstStep({ form, handleChange }) {
           <section className="short-section">
             <label>
               <p className="highlight-text">Nombre del autor</p>
-              <input type="text" name="authorName" value={form.authorName} onChange={handleChange}/>
+              <input
+                type="text"
+                name="authorName"
+                value={form.authorName}
+                onChange={handleChange}
+                placeholder="Tu respuesta"
+              />
             </label>
           </section>
           <section className="short-section">
             <label>
               <p className="highlight-text">Apellido del autor</p>
-              <input type="text" name="authorLastname" value={form.authorLastname} onChange={handleChange}/>
+              <input
+                type="text"
+                name="authorLastname"
+                value={form.authorLastname}
+                onChange={handleChange}
+                placeholder="Tu respuesta"
+              />
             </label>
           </section>
         </div>
         <section className="long-section">
           <label>
             <p className="highlight-text">Nombre del libro</p>
-            <input type="text" name="book" value={form.book} onChange={handleChange} />
+            <input
+              type="text"
+              name="book"
+              value={form.book}
+              onChange={handleChange}
+              placeholder="Tu respuesta"
+            />
           </label>
         </section>
         <section className="long-section">
           <label>
             <p className="highlight-text">Editorial del libro</p>
-            <input type="text" name="editorial" value={form.editorial} onChange={handleChange}/>
+            <input
+              type="text"
+              name="editorial"
+              value={form.editorial}
+              onChange={handleChange}
+              placeholder="Tu respuesta"
+            />
           </label>
         </section>
       </form>

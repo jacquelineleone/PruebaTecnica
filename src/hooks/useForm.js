@@ -21,7 +21,6 @@ export const useForm = (initialForm, validateForm) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         /*if(Object.keys(errors).length === 0) {
             setResponse(true);
         } else {

@@ -22,6 +22,7 @@ input {
   border: 1px solid #000000;
   border-radius: 7px;
   background-color: transparent;
+  outline: none;
 }
 
 textarea {
@@ -39,6 +40,17 @@ textarea {
   border: 1px solid #000000;
   border-radius: 7px;
   background-color: transparent;
+  outline: none;
+}
+
+button {
+  height: 48px;
+  border-radius: 30px;
+  min-width: 154px;
+  font-family: "Raleway", sans-serif; 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .title {
@@ -94,7 +106,7 @@ textarea {
 }
 
 .long-section {
-  width: 324px;
+  width: 327px;
   text-align: left;
 }
 
@@ -104,4 +116,8 @@ textarea {
 
 .long-section input {
   width: 308px;
+}
+
+.long-button {
+  width: 327px;
 }

@@ -1,0 +1,23 @@
+.modal {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(2px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal.is-open {
+    display: flex;
+}
+.modal-container {
+    position: relative;
+    background: #E3E1D5;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    overflow-y: auto;
+}
