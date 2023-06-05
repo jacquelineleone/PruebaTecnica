@@ -1,8 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
 
 .App {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  color: rgba(26, 26, 26, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Raleway", sans-serif;
+  padding-left: 15px;
+  height: 48px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  background-color: transparent;
+}
+
+textarea {
+  color: rgba(26, 26, 26, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Raleway", sans-serif;  
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  resize: none;
+  height: 228px;
+  width: 308px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  background-color: transparent;
 }
 
 .title {
@@ -12,14 +48,18 @@
 }
 
 .subtitle {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-weight: 400;
   font-size: 32px;
   text-align: left;
 }
 
+.subtitle-space {
+  margin-bottom: -5px;
+}
+
 .highlight-text {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -33,9 +73,35 @@
 }
 
 .text {
-  color: #1A1A1A;
+  color: #1a1a1a;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
+}
+
+.short-section {
+  width: 156px;
+  text-align: left;
+}
+
+.short-section p {
+  margin-bottom: 5px;
+}
+
+.short-section input {
+  width: 136px;
+}
+
+.long-section {
+  width: 324px;
+  text-align: left;
+}
+
+.long-section p {
+  margin-bottom: 5px;
+}
+
+.long-section input {
+  width: 308px;
 }

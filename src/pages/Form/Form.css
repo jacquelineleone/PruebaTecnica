@@ -1,0 +1,22 @@
+.step-container {
+    margin-top: 44px;
+    width: 328px;
+}
+.author-inputs-container {
+    display: flex;
+    justify-content: space-between;
+}
+.first-step-form {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 36px;
+    margin-bottom: 50px;
+}
+.third-step-form {
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

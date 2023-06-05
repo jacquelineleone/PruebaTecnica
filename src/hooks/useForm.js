@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
+//import { useDispatch } from "react-redux";
 
 export const useForm = (initialForm, validateForm) => {
-    const dispatch = useDispatch();
+    //const dispatch = useDispatch();
     const [form, setForm] = useState(initialForm);
     const [errors, setErrors] = useState({});
     const [response, setResponse] = useState(null);
 
-    useEffect(() => {
+    /*useEffect(() => {
         setErrors(validateForm(form));
-    }, [form]);
+    }, [form]);*/
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -22,11 +22,11 @@ export const useForm = (initialForm, validateForm) => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if(Object.keys(errors).length === 0) {
+        /*if(Object.keys(errors).length === 0) {
             setResponse(true);
         } else {
             return;
-        }
+        }*/
     }
 
     return {
