@@ -1,17 +1,8 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { combineReducers } from "redux";
+import booksReducer from "./booksReducer";
 
-const initialState = {
-    books: [],
-    currentBook: null
-}
-
-export const bookSlice = createSlice({
-    name: "books",
-    initialState,
-    reducers: {
-
-    }
+const reducer = combineReducers({
+  books: booksReducer,
 });
 
-export const {} = bookSlice.actions;
-export default bookSlice.reducer;
+export default reducer;

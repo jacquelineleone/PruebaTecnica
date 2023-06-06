@@ -52,3 +52,8 @@
     text-align: right;
     margin-bottom: -10px;
 }
+@media only screen and (min-width: 900px) {
+    .step-container {
+        width: 820px;
+    }
+}

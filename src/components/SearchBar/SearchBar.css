@@ -1,7 +1,20 @@
 .search-bar-container {
-    border: 1px solid #000000;
-    border-radius: 30px;
-    height: 48.91px;
-    margin-top: 60px;
-    margin-bottom: 50px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  height: 48.91px;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  display: flex;
 }
+.search-bar-container input {
+  border: 0px;
+  border-radius: 30px;
+  width: 100%;
+}
+.search-bar-container button {
+  border: 0px;
+    background-color: transparent;
+    min-width: 60px;
+}   

@@ -67,7 +67,7 @@ export default function Form() {
           {page === FormPages.length - 1 ? "Finalizar" : "Continuar"}
         </button>
       </div>
-      <Modal isOpen={isOpen} closeModal={closeModal} width={280} height={260}>
+      <Modal isOpen={isOpen} closeModal={closeModal}>
         <div className="modal-content">
           <div>
             <h1 className="subtitle">¡Genial!</h1>

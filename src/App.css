@@ -30,7 +30,7 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  font-family: "Raleway", sans-serif;  
+  font-family: "Raleway", sans-serif;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -47,10 +47,11 @@ button {
   height: 48px;
   border-radius: 30px;
   min-width: 154px;
-  font-family: "Raleway", sans-serif; 
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  cursor: pointer;
 }
 
 .title {
@@ -120,4 +121,19 @@ button {
 
 .long-button {
   width: 327px;
+}
+
+@media only screen and (min-width: 900px) {
+  textarea {
+    width: 800px;
+  }
+  .short-section {
+    width: 380px;
+  }
+  .short-section input {
+    width: 360px;
+  }
+  .long-section input {
+    width: 800px;
+  }
 }
