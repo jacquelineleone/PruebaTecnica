@@ -18,10 +18,9 @@ export default function Books() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        dispatch(getBooks())
-        .then(res => {
-          setFilteredBooks(res.payload)
-        })
+        dispatch(getBooks()).then((res) => {
+          setFilteredBooks(res.payload);
+        });
         setLoading(false);
       } catch (error) {
         setError(error.message);
@@ -44,10 +43,7 @@ export default function Books() {
         <div style={{ display: "flex" }}>
           {filteredBooks &&
             filteredBooks.map((book) => (
-              <CardBook
-                title={book.name}
-                author={book.authors}
-              />
+              <CardBook title={book.name} author={book.authors} />
             ))}
         </div>
       </div>

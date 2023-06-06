@@ -4,23 +4,23 @@
   border: 1px solid #000000;
   border-radius: 7px;
 }
-.cardbook img{
+.cardbook img {
   width: 190px;
   height: 286px;
 }
 .cardbook-data {
-    height: 36px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 10px;
-    margin-top: 12px;
+  height: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+  margin-top: 12px;
 }
 .cardbook-data h1 {
-    margin-bottom: -15px;
-    text-align: left;
+  margin-bottom: -15px;
+  text-align: left;
 }
 .cardbook-data p {
-    text-align: left;
+  text-align: left;
 }
