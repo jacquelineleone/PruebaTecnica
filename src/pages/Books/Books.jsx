@@ -37,8 +37,7 @@ export default function Books() {
       {
         Header: "Author",
         accessor: "authors",
-      },
-      // Agrega más columnas aquí según tus necesidades
+      }
     ],
     []
   );

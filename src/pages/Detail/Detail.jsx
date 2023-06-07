@@ -7,6 +7,7 @@ import { getOneBook } from "../../redux/actions";
 //components
 import Menu from "../../components/Menu/Menu";
 import CardBook from "../../components/Card/CardBook";
+import FavoriteButton from "../../components/FavoriteButton/FavoriteButton";
 
 export default function Detail() {
   const dispatch = useDispatch();
@@ -36,21 +37,28 @@ export default function Detail() {
   return (
     <div>
       <Menu />
-      <div className="detail-container">
-        <div className="detail-header">
-          <CardBook />
-          <div className="detail-title">
-            <h1 className="subtitle">{book.name}</h1>
-            {book.authors.map((author) => (
-              <p className="input-text">{author}</p>
-            ))}
+      {book && (
+        <div className="detail-container">
+          <div className="detail-header">
+            <CardBook />
+            <div className="detail-title">
+              <div>
+                <h1 className="subtitle">{book.name}</h1>
+                {book.authors.map((author) => (
+                  <p className="input-text">{author}</p>
+                ))}
+              </div>
+              <div>
+                <FavoriteButton bookId={id}/>
+              </div>
+            </div>
+          </div>
+          <div className="detail-sinopsis">
+            <h1 className="highlight-text">Sinopsis</h1>
+            <p className="input-text">{description}</p>
           </div>
         </div>
-        <div className="detail-sinopsis">
-          <h1 className="highlight-text">Sinopsis</h1>
-          <p className="input-text">{description}</p>
-        </div>
-      </div>
+      )}
     </div>
   );
 }

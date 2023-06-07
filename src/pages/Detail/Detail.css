@@ -7,8 +7,13 @@
 .detail-title {
     text-align: left;
     max-width: 270px;
+    display: flex;
+    align-items: flex-end;
 }
 .detail-title h1 {
+    margin-bottom: -10px;
+}
+.detail-title p {
     margin-bottom: -10px;
 }
 .detail-sinopsis {
