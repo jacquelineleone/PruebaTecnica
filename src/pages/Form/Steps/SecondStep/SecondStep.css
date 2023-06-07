@@ -1,8 +1,8 @@
 .categories-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
   margin-bottom: 50px;
+  gap: 5px;
 }
 .category {
   border: 1px solid #000000;
@@ -12,7 +12,6 @@
   line-height: 16px;
   color: #1a1a1a;
   min-width: 95px;
-  padding: 5px;
   cursor: pointer;
 }
 .category:hover {
@@ -22,10 +21,19 @@
   line-height: 16px;
   color: #ffffff;
 }
-.active-category {
+.selected {
   background-color: #ea2129;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+}
+
+@media only screen and (min-width: 400px) {
+  .categories-container {
+    gap: 15px;
+  }
+  .category {
+    padding: 5px
+  }
 }

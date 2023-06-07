@@ -1,6 +1,5 @@
 import "./Home.css";
 import React from "react";
-import { useSelector } from "react-redux";
 //components
 import Menu from "../../components/Menu/Menu";
 //assets

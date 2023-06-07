@@ -1,12 +1,10 @@
 import "./Books.css";
 import React, { useEffect, useMemo, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 //actions
 import { getBooks } from "../../redux/actions";
 //components
 import Menu from "../../components/Menu/Menu";
-import SearchBar from "../../components/SearchBar/SearchBar";
-import CardBook from "../../components/Card/CardBook";
 import { Table } from "../../components/Table/Table";
 
 export default function Books() {
