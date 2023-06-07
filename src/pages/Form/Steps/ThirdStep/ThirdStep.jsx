@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ThirdStep({ form, handleChange }) {
+export default function ThirdStep({ form, handleChange, send, errors }) {
   return (
     <div className="step-container">
       <form className="third-step-form">

@@ -13,7 +13,10 @@ export default function booksReducer(state = initialState, action) {
         allBooks: action.payload,
       };
     case GET_ONE_BOOK:
-      return {};
+      return {
+        ...state,
+        currentBook: action.payload
+      };
     default:
       return state;
   }

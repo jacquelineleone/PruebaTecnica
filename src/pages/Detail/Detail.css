@@ -1,0 +1,32 @@
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.detail-title {
+    text-align: left;
+    max-width: 270px;
+}
+.detail-title h1 {
+    margin-bottom: -10px;
+}
+.detail-sinopsis {
+    text-align: left;
+    max-width: 270px;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 700px) {
+    .detail-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    .detail-sinopsis {
+        max-width: 270px;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+}

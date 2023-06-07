@@ -14,4 +14,15 @@ export function getBooks() {
   };
 }
 
-/*export const getOneBook = (id) => {};*/
+export const getOneBook = (id) => {
+  return async function (dispatch) {
+    const book = await axios.get(
+      `https://www.anapioficeandfire.com/api/books/${parseInt(id)}`
+    );
+
+    return dispatch({
+      type: GET_ONE_BOOK,
+      payload: book.data
+    })
+  }
+};

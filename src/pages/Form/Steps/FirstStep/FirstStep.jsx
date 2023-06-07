@@ -1,7 +1,7 @@
 import "../../Form.css";
 import React from "react";
 
-export default function FirstStep({ form, handleChange }) {
+export default function FirstStep({ form, handleChange, send, errors }) {
   return (
     <div className="step-container">
       <div>
