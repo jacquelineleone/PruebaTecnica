@@ -7,7 +7,7 @@ import burger from "../../assets/img/mobile/menu/burger.svg";
 export default function Menu() {
   return (
     <div className="menu-container">
-      <img src={logo} alt="logo-booking" />
+      <a href="/"><img src={logo} alt="logo-booking" /></a>
       <img src={burger} alt="burger-menu" />
     </div>
   );

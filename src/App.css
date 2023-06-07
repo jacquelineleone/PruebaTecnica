@@ -43,6 +43,30 @@ textarea {
   outline: none;
 }
 
+.select-container {
+  width: 308px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+select {
+  height: 48px;
+  border-radius: 30px;
+  width: 288px;
+  font-family: "Raleway", sans-serif;
+  color: rgba(26, 26, 26, 0.7);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 7px;
+  background-color: transparent;
+  outline: none;
+}
+
 button {
   height: 48px;
   border-radius: 30px;
@@ -52,6 +76,7 @@ button {
   font-size: 14px;
   line-height: 16px;
   cursor: pointer;
+  border: 0px;
 }
 
 .title {
@@ -121,6 +146,17 @@ button {
 
 .long-button {
   width: 327px;
+}
+
+.blue-button {
+  background: #1b223e;
+  color: #ffffff;
+  border: 0px;
+}
+.border-button {
+  background-color: transparent;
+  border: 1px solid #000000;
+  color: #1a1a1a;
 }
 
 @media only screen and (min-width: 900px) {

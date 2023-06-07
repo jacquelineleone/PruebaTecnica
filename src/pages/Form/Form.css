@@ -27,16 +27,6 @@
   display: flex;
   justify-content: space-between;
 }
-.blue-button {
-  background: #1b223e;
-  color: #ffffff;
-  border: 0px;
-}
-.border-button {
-  background-color: transparent;
-  border: 1px solid #000000;
-  color: #1a1a1a;
-}
 .modal-content {
   display: flex;
   flex-direction: column;

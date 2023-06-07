@@ -1,0 +1,21 @@
+.home-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+}
+.home-container h1 {
+    margin-top: 90px;
+    margin-bottom: 0px;
+}
+@media screen and (min-width: 580px) {
+    .home-container {
+        flex-direction: row;
+        align-items: center;
+        height: 90vh;
+    }
+    .home-container img{
+        max-width: 300px;
+    }
+}

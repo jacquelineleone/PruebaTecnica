@@ -1,0 +1,38 @@
+.table {
+    border: 1px solid #000000;
+    background-color: transparent;
+    width: 100%;
+    padding: 5px
+}
+.table tr {
+    padding: 5px;
+    background-color: #F6F5ED;
+}
+.thead tr{
+    color: #000000;
+    font-weight: 400;
+    font-size: 38px;
+    text-align: left;
+}
+.tbody {
+    border: 1px solid #000000;
+}
+.tbody tr{
+    color: rgba(26, 26, 26, 0.7);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.link {
+    text-decoration: none;
+    color: rgba(26, 26, 26, 0.7);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+}
+.link:hover {
+    border: 1px solid #000000;
+}

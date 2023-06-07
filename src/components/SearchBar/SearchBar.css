@@ -7,6 +7,14 @@
   margin-top: 60px;
   margin-bottom: 50px;
   display: flex;
+  align-items: center;
+}
+.filter-container {
+  display: flex;
+  height: 18px;
+  width: 18px;
+  margin-left: 25px;
+  cursor: pointer;
 }
 .search-bar-container input {
   border: 0px;
@@ -17,4 +25,8 @@
   border: 0px;
   background-color: transparent;
   min-width: 60px;
+}
+.form {
+  width: 100%;
+  display: flex;
 }

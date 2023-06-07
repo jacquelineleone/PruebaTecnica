@@ -1,0 +1,31 @@
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.category {
+  border: 1px solid #000000;
+  border-radius: 35px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1a1a1a;
+  min-width: 95px;
+  padding: 5px;
+  cursor: pointer;
+}
+.category:hover {
+  background-color: #ea2129;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.active-category {
+  background-color: #ea2129;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
