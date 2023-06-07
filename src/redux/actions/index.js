@@ -16,8 +16,9 @@ export function getBooks() {
 
 export const getOneBook = (id) => {
   return async function (dispatch) {
+    console.log(id)
     const book = await axios.get(
-      `https://www.anapioficeandfire.com/api/books/${parseInt(id)}`
+      `https://www.anapioficeandfire.com/api/books/${id}`
     );
 
     return dispatch({

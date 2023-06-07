@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Prueba tecnica Grupo Aspasia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue creado con create react app, con fines de realizar la entrevista técnica de Grupo Aspasia.
 
-## Available Scripts
+## Ejecución
 
-In the project directory, you can run:
+1) Clonar el repositorio
+2) Ejecutar el comando npm install
+3) Para levantar la aplicacion ejecutar npm start
 
-### `npm start`
+### Fundamentos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Home (path: /): una landing de ingreso, para que el usuario no se tope desde un primer momento con la lista de libros
+- Libros (path: /Libros): screen donde se renderizan los libros utilizando React Table. Cada uno de los elementos al tocarlos te redirijen a la screen del detalle, donde se ve información específica de cada libro. Para mejorar la experiencia de usuario se implementó un hover, que se renderiza cuando se posiciona el click sobre cada elemento que permitirá la redirección
+- Libro (path: /Libro/:id): screen donde se observa el detalle del libro correspondiente. Se obtiene el id por params, y a partir del mismo se realiza el llamado a la api correspondiente. Agregé una imagen ilustrativa, y un lorem ipsum a modo de simulación de la descripción. 
+También en el detalle, es posible agregar el libro a favoritos (el cual se verá renderizado en la pestaña de libros)
+- Formulario (path: /Formulario): formulario de tres pasos, donde en la primera pestaña se renderizan los inputs con información más general, en la segunda las categorías, y en la última la información más específica. El formulario esta controlado, y se renderizan los correspondientes modales en caso de éxito y error. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Decisiones
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Para el manejo de los favoritos, utilicé localStorage con el fin de mantener los mismos a lo largo de toda la estadía del usuario en la página. De esta manera, se pueden renderizar en la página principal.
 
-### `npm run build`
+### Comentarios
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- El diseño de la página lo realicé en Figma, y a partir de él comencé el desarrollo de la evaluación.
+- Debido al tiempo dado, y una situación personal que me surgió, no pude realizar el testing con JEST ni llegué a desarrollar los filtros con React-Table.
+- Si hubiera contado con mas tiempo, me hubiera gustado simular el agregado de libros a la web, y que los mismos puedan renderizarse en la página principal. También me hubiera tomado el tiempo de hacer un menu desplegable y agregar mas estilos y animaciones a la página. Por último hubiera desarrollado un loader, para mejorar la experiencia de usuario y demostrarle al mismo que la página está cargando.

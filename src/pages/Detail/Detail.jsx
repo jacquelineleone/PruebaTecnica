@@ -18,7 +18,7 @@ export default function Detail() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        dispatch(getOneBook(id + 1));
+        dispatch(getOneBook(parseInt(id) + 1));
         setLoading(false);
       } catch (error) {
         setError(error.message);
@@ -26,10 +26,9 @@ export default function Detail() {
       }
     };
     fetchData();
-  }, []);
+  }, [id]);
 
   const book = useSelector((state) => state.books.currentBook);
-  console.log(book);
 
   const description =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum";
@@ -40,7 +39,7 @@ export default function Detail() {
       {book && (
         <div className="detail-container">
           <div className="detail-header">
-            <CardBook />
+            <CardBook key={book.isbn}/>
             <div className="detail-title">
               <div>
                 <h1 className="subtitle">{book.name}</h1>

@@ -1,10 +1,15 @@
 .cardbook {
   width: 270px;
-  height: 418px;
   border: 1px solid #000000;
   border-radius: 7px;
 }
 .cardbook img {
   width: 270px;
   height: 418px;
+}
+.cardbook-title {
+  text-align: left;
+}
+.cardbook-title h1 {
+  margin-bottom: 0px;
 }

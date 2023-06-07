@@ -10,7 +10,14 @@ export default function Menu() {
       <a href="/">
         <img src={logo} alt="logo-booking" />
       </a>
-      <img src={burger} alt="burger-menu" />
+      <div className="links">
+        <a href="/Libros">
+          <p>Libros</p>
+        </a>
+        <a href="/Formulario">
+          <p>Formulario</p>
+        </a>
+      </div>
     </div>
   );
 }
