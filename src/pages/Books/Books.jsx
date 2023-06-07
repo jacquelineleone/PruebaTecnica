@@ -58,7 +58,7 @@ export default function Books() {
         <div className="favorites-container">
           {favorites[0] !== undefined &&
           favorites.map((fav) => (
-            <CardBook id={fav} key={fav}/>
+            <CardBook key={fav}/>
           ))
           }
           {favorites[0] === undefined &&

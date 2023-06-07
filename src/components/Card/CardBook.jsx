@@ -6,7 +6,7 @@ import { getOneBook } from "../../redux/actions";
 //assets
 import cover from "../../assets/cover/cover.png";
 
-export default function CardBook({ id }) {
+export default function CardBook() {
   const dispatch = useDispatch();
   const book = useSelector((state) => state.books.currentBook);
 
